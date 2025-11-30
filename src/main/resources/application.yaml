@@ -1,0 +1,6 @@
+spring:
+  application:
+    name: pet-tracker
+
+spring.jpa.show-sql: true
+spring.h2.console.enabled: true

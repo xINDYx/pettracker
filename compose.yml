@@ -1,0 +1,11 @@
+version: "3.9"
+
+services:
+  pettracker-app:
+    build: .
+    container_name: pettracker-app
+    ports:
+      - "8080:8080"
+    environment:
+      - SPRING_PROFILES_ACTIVE=h2
+    restart: unless-stopped
